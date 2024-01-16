@@ -44,3 +44,23 @@ To close this instance, click the blue button in the bottom-right and select to 
 Additionally, you may get some warnings regarding the `Python` extension, these should be resolved with restarting.
 
 Changes in this containarized instance of VSCode will be reflected in the host machine.
+
+Some [info](https://github.com/patrickloeber/python-docker-tutorial/tree/main/dev-environment#7-debug-python-code-inside-a-container) on debugging
+
+# docker-compose
+
+Seems like using docker-compose results in a ~20s delay between making changes to the code and `uvicorn` picking them up and reflecting these changes in the live API.
+
+Kick things off with
+
+```bash
+docker-compose up
+```
+
+Use the `--build` option to rebuild the image. Use `-d` option for detached mode.
+
+Can stop the container with `Ctrl+C`, then to get rid of the container stack, use
+
+```bash
+docker-compose down
+```
