@@ -8,19 +8,17 @@ Following [How to create a great dev environment with Docker](https://youtu.be/0
 Build the image
 
 ```bash
-docker build -t myimage .
+docker build -t fastapi-app-with-docker .
 ```
 
-Start Docker container
+Run Docker container using
 
 ```bash
-docker run -d --name mycontainer -p 80:80 myimage
+. /start_container.sh
 ```
 
-View docs at `http://localhost/docs`
+View docs at [http://localhost/docs](http://localhost/docs)
 
 To check if a container was made, run
 
 `docker inspect <container tag>`
-
-Was able to add a Docker volume via `start_container.sh`

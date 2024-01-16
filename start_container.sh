@@ -1,6 +1,6 @@
 docker run \
   -d \
-  --name mycontainer \
+  --name fastapi-app-with-docker \
   -p 80:80 \
   -v /${PWD}/app:/code/app \
-  myimage
+  fastapi-app-with-docker
