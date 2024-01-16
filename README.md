@@ -5,6 +5,8 @@ Following [FastAPI docs](https://fastapi.tiangolo.com/deployment/docker/)
 
 Following [How to create a great dev environment with Docker](https://youtu.be/0H2miBK_gAk?si=lllFonixFqUq58Eq)
 
+# Docker Image and Container
+
 Build the image
 
 ```bash
@@ -22,3 +24,23 @@ View docs at [http://localhost/docs](http://localhost/docs)
 To check if a container was made, run
 
 `docker inspect <container tag>`
+
+# Docker Dev Environment
+
+Open the remote VSCode window (bottom right)
+
+![1705428379359](image/README/1705428379359.png)
+
+Select to attach to running container
+
+![1705428498357](image/README/1705428498357.png)
+
+Install the `Python` VSCode extension. This will be installed in this container so as long as this container persists you won't have to reinstall this extension again. This extension will allow VSCode to find variable definitions (can use `F12`). If this does not work right away, close and re-connect VSCode.
+
+To close this instance, click the blue button in the bottom-right and select to close remote connection
+
+![1705428901931](image/README/1705428901931.png)
+
+Additionally, you may get some warnings regarding the `Python` extension, these should be resolved with restarting.
+
+Changes in this containarized instance of VSCode will be reflected in the host machine.
