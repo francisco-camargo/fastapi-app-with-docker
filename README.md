@@ -3,7 +3,9 @@ Deploy FastAPI Application via Docker
 
 Following [FastAPI docs](https://fastapi.tiangolo.com/deployment/docker/)
 
-Following [How to create a great dev environment with Docker](https://youtu.be/0H2miBK_gAk?si=lllFonixFqUq58Eq)
+Following [How to create a great dev environment with Docker](https://youtu.be/0H2miBK_gAk?si=lllFonixFqUq58Eq) by Patrick Loeber.
+
+In it's current state, you run the app via `docker-compose` as detailed below.
 
 # Docker Image and Container
 
