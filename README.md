@@ -66,3 +66,13 @@ Can stop the container with `Ctrl+C`, then to get rid of the container stack, us
 ```bash
 docker-compose down
 ```
+
+# Dev-Containers Extension
+Following [this](https://youtu.be/SDa3v4Quj7Y?si=d_Xm9Kh_TnlIWXoJ) video guide
+
+Install the Remote Development extension pack, which includes Dev Containers. Let's use the "Clone Repoository in Container Volume..." option.
+
+![1705460722378](image/README/1705460722378.png)
+
+## Delayed `--reload`
+I have noticed that when a change is made to the code in the host machine, it takes several seconds before the change is picked up by the containerized instance of `uvicorn` when using the `--reload` flag. [This](https://youtu.be/SDa3v4Quj7Y?si=IauV72FmPa4kyS8r&t=384) video explains a possible reason why. The solution is to clone repos directly into WSL.
