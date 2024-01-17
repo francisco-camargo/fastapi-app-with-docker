@@ -67,7 +67,14 @@ Can stop the container with `Ctrl+C`, then to get rid of the container stack, us
 docker-compose down
 ```
 
-# Dev-Containers Extension
+# WSL use of Docker
+
+TLDR: I don't love this, I'd rather use the methods detailed above. However, due to the delayed `--reload` (see subsection below), it's worth it to clone to WSL and launch `docker-compose` from there, instead of directly from Windows. This will remove the delay! To launch VSCode from WSL use `code .`
+
+![wsl_vscode](image/README/wsl_vscode.png)
+
+## Dev Containers
+
 Following [this](https://youtu.be/SDa3v4Quj7Y?si=d_Xm9Kh_TnlIWXoJ) video guide
 
 Install the Remote Development extension pack, which includes Dev Containers. Let's use the "Clone Repoository in Container Volume..." option.
